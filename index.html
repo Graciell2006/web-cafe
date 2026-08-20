@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruang Seduh — Kedai Kopi & Kudapan</title>
+<meta name="description" content="Ruang Seduh, kedai kopi lingkungan di Bandung. Kopi, non-kopi, dan kudapan diseduh serta disajikan perlahan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#beranda" class="logo">Ruang<span>Seduh</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#beranda">Beranda</a>
+      <a href="#menu">Menu</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section id="beranda" class="hero">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Sejak 2021 · Bandung</p>
+      <h1>Jeda kecil,<br>rasa yang <em>diingat</em>.</h1>
+      <p class="hero-desc">Ruang Seduh adalah kedai kopi lingkungan tempat biji lokal diseduh perlahan, dan setiap cangkir jadi alasan untuk berhenti sejenak.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+        <a href="#kontak" class="btn btn-ghost">Kunjungi Kami</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <svg class="cup-art" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+        <ellipse class="saucer" cx="150" cy="272" rx="95" ry="9"></ellipse>
+        <path class="cup-body" d="M68 164 h150 v66 a75 40 0 0 1 -150 0 z"></path>
+        <path class="cup-handle" d="M216 182 q38 4 38 36 q0 32 -38 36"></path>
+        <line class="cup-rim" x1="68" y1="164" x2="218" y2="164"></line>
+        <path class="steam steam-1" d="M118 148 q-12 -22 0 -44 q12 -22 0 -44"></path>
+        <path class="steam steam-2" d="M150 148 q12 -22 0 -44 q-12 -22 0 -44"></path>
+        <path class="steam steam-3" d="M182 148 q-12 -22 0 -44 q12 -22 0 -44"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="philosophy reveal">
+    <p>&ldquo;Kopi terbaik bukan yang paling rumit&mdash;tapi yang paling jujur pada bijinya sendiri.&rdquo;</p>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <div class="section-head reveal">
+      <p class="eyebrow">Menu</p>
+      <h2>Pilih rasa yang pas untuk harimu</h2>
+    </div>
+
+    <div class="menu-tabs reveal" role="tablist">
+      <button class="tab active" data-filter="kopi" role="tab" aria-selected="true">Kopi</button>
+      <button class="tab" data-filter="non-kopi" role="tab" aria-selected="false">Non-Kopi</button>
+      <button class="tab" data-filter="makanan" role="tab" aria-selected="false">Makanan</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <article class="menu-card reveal" data-category="kopi">
+        <div class="menu-card-top">
+          <h3>Kopi Susu Gula Aren</h3>
+          <span class="price">Rp 22.000</span>
+        </div>
+        <p>Espresso, susu segar, dan gula aren asli yang dimasak perlahan.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="kopi">
+        <div class="menu-card-top">
+          <h3>Americano</h3>
+          <span class="price">Rp 18.000</span>
+        </div>
+        <p>Espresso murni bertemu air panas. Sederhana dan tegas.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="kopi">
+        <div class="menu-card-top">
+          <h3>Cappuccino</h3>
+          <span class="price">Rp 25.000</span>
+        </div>
+        <p>Espresso, susu, dan foam lembut bertekstur beludru.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="kopi">
+        <div class="menu-card-top">
+          <h3>Es Kopi Senja</h3>
+          <span class="price">Rp 24.000</span>
+        </div>
+        <p>Kopi dingin, susu, dan sentuhan karamel di penghujung hari.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="kopi">
+        <div class="menu-card-top">
+          <h3>Kopi Tubruk</h3>
+          <span class="price">Rp 15.000</span>
+        </div>
+        <p>Racikan tradisional&mdash;kopi bubuk diseduh langsung dengan air panas.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="non-kopi">
+        <div class="menu-card-top">
+          <h3>Matcha Latte</h3>
+          <span class="price">Rp 26.000</span>
+        </div>
+        <p>Bubuk matcha Jepang dan susu segar, pahit yang bersahabat.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="non-kopi">
+        <div class="menu-card-top">
+          <h3>Chocolate Milk</h3>
+          <span class="price">Rp 23.000</span>
+        </div>
+        <p>Cokelat kental manis dipadukan susu segar, hangat atau dingin.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="non-kopi">
+        <div class="menu-card-top">
+          <h3>Teh Tarik</h3>
+          <span class="price">Rp 18.000</span>
+        </div>
+        <p>Teh susu khas, ditarik hingga berbusa lembut.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="non-kopi">
+        <div class="menu-card-top">
+          <h3>Lemon Tea</h3>
+          <span class="price">Rp 17.000</span>
+        </div>
+        <p>Teh hitam segar dengan perasan lemon asli.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="non-kopi">
+        <div class="menu-card-top">
+          <h3>Wedang Jahe</h3>
+          <span class="price">Rp 16.000</span>
+        </div>
+        <p>Jahe merah rebus dengan gula aren, penghangat badan.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="makanan">
+        <div class="menu-card-top">
+          <h3>Roti Bakar Cokelat Keju</h3>
+          <span class="price">Rp 20.000</span>
+        </div>
+        <p>Roti panggang renyah dengan cokelat leleh dan keju parut.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="makanan">
+        <div class="menu-card-top">
+          <h3>Pisang Goreng Madu</h3>
+          <span class="price">Rp 18.000</span>
+        </div>
+        <p>Pisang goreng kriuk, disiram madu asli di atasnya.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="makanan">
+        <div class="menu-card-top">
+          <h3>Croissant Almond</h3>
+          <span class="price">Rp 24.000</span>
+        </div>
+        <p>Croissant berlapis dengan taburan almond panggang.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="makanan">
+        <div class="menu-card-top">
+          <h3>Nasi Goreng Kampung</h3>
+          <span class="price">Rp 28.000</span>
+        </div>
+        <p>Nasi goreng rumahan dengan telur mata sapi dan kerupuk.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="makanan">
+        <div class="menu-card-top">
+          <h3>Sandwich Telur Sayur</h3>
+          <span class="price">Rp 22.000</span>
+        </div>
+        <p>Roti gandum, telur dadar, dan sayuran segar.</p>
+      </article>
+
+      <article class="menu-card reveal" data-category="makanan">
+        <div class="menu-card-top">
+          <h3>Waffle Karamel</h3>
+          <span class="price">Rp 27.000</span>
+        </div>
+        <p>Waffle hangat dengan siraman saus karamel buatan sendiri.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="tentang" class="about">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Tentang Kami</p>
+        <h2>Diseduh dengan sabar, disajikan tanpa terburu-buru</h2>
+        <p>Kami percaya kedai kopi terbaik adalah yang membiarkan waktu melambat. Biji kopi kami dipilih dari petani lokal, disangrai dalam jumlah kecil, dan diseduh satu per satu&mdash;bukan diburu-buru untuk antrean.</p>
+      </div>
+
+      <div class="about-info reveal">
+        <div class="info-block">
+          <h3>Jam Buka</h3>
+          <ul>
+            <li><span>Senin&ndash;Jumat</span><span>08.00&ndash;21.00</span></li>
+            <li><span>Sabtu&ndash;Minggu</span><span>09.00&ndash;22.00</span></li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Lokasi</h3>
+          <p>Jl. Ganesha No. 12, Coblong,<br>Bandung, Jawa Barat</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="kontak" class="footer">
+  <div class="footer-inner">
+    <div>
+      <p class="logo footer-logo">Ruang<span>Seduh</span></p>
+      <p class="footer-tagline">Tempat secangkir kopi jadi jeda yang berarti.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Ruang Seduh. Semua rasa, disimpan baik-baik.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
